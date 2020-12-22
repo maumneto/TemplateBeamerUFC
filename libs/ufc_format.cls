@@ -6,7 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ufc_format}[15/12/20120, v1.0]
+\ProvidesClass{libs/ufc_format}[15/12/20120, v1.0]
 
 \PassOptionsToPackage{svgnames}{xcolor} 
 \LoadClass[compress, 11pt]{beamer}
