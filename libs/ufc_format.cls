@@ -12,8 +12,8 @@
 \LoadClass[compress, 11pt]{beamer}
 
 %% Putting the background image in the frames
-\usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{figures/logoUFCbackground.png}}
-\logo{\includegraphics[scale=0.1]{figures/brasao1_horizontal_cor.pdf}\hspace{9.5cm}}
+\usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/logoUFCbackground.png}}
+\logo{\includegraphics[scale=0.1]{libs/brasao1_horizontal_cor.pdf}\hspace{9.5cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
