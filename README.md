@@ -45,4 +45,20 @@ Some tips for using this template
 
 ### Boxes
 
-- 
+- Example Box
+
+```tex
+\examplebox{testando o example box}
+```
+
+- Alert Box
+
+```tex
+\alertbox{testando o alert box}
+```
+
+- Success Box
+
+```tex
+\successbox{testando o success box}
+```
