@@ -45,10 +45,10 @@ Some tips for using this template
 
 ### Boxes
 
-- Example Box
+- Simple Box
 
 ```tex
-\examplebox{testando o example box}
+\simplebox{testando o simple box}
 ```
 
 - Alert Box

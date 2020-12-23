@@ -13,13 +13,14 @@
 
 %% Putting the background image in the frames
 \usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/logoUFCbackground.png}}
-\logo{\includegraphics[scale=0.1]{libs/brasao1_horizontal_cor.pdf}\hspace{9.5cm}}
+\logo{\includegraphics[scale=0.1]{libs/brasao1_horizontal_cor.pdf}\hspace{9.7cm} \vspace{-0.2cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[brazil]{babel}
 \RequirePackage{graphicx}
 \RequirePackage{hyperref}
+\RequirePackage{microtype}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{helvet}
 \RequirePackage{pdfpages}
@@ -27,6 +28,7 @@
 \RequirePackage{array}
 \RequirePackage{colortbl}
 \RequirePackage{graphicx}
+\RequirePackage{fancybox}
 \RequirePackage[footnotesize,hang]{caption}
 % Option management
 \RequirePackage{beamerbaseoptions}
@@ -122,10 +124,8 @@
   \setbeamercolor{itemize item}{fg=blue_theme!70}
 }
 
-
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % determine some color for the text
-
 \setbeamercolor*{normal text}{fg=black,bg=white}
 \setbeamercolor*{example text}{fg=yellow}
 \setbeamercolor*{alerted text}{fg=red}
@@ -135,33 +135,33 @@
 
 % create the alert box
 \newcommand{\alertbox}[1]{
-\begin{center}
+\begin{flushleft}
 \fcolorbox{red}{white}{
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.9\textwidth}
 #1
 \end{minipage}
 }
-\end{center}
+\end{flushleft}
 }
 
-% create the example box
-\newcommand{\examplebox}[1]{
-\begin{center}
+% create the simple box
+\newcommand{\simplebox}[1]{
+\begin{flushleft}
 \fcolorbox{blue_theme}{white}{
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.9\textwidth}
 #1
 \end{minipage}
 }
-\end{center}
+\end{flushleft}
 }
 
 % create the success box
 \newcommand{\successbox}[1]{
-\begin{center}
+\begin{flushleft}
 \fcolorbox{green_ufc}{white}{
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.9\textwidth}
 #1
 \end{minipage}
 }
-\end{center}
+\end{flushleft}
 }
