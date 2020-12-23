@@ -42,6 +42,9 @@
 
 % style of the blocks ufc
 \beamerboxesdeclarecolorscheme{blockUFC}{blue_theme}{white}
+\beamer@autopdfinfotrue
+\beamer@notesnormalstrue
+
 
 \usecolortheme[named=blue_theme]{structure}
 
