@@ -3,17 +3,17 @@
 %% author: Maurício Moreira Neto - Doctoral student in Computer Science (MDCC)   %%
 %% contacts:                                                                     %%
 %%    e-mail: maumneto@ufc.br                                                    %%
-%%    linktree:  https://linktr.ee/maumneto                                      %%
+%%    linktree: https://linktr.ee/maumneto                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{libs/ufc_format}
 
-% 
+% Inserting the preamble file with the packages
 \input{libs/preamble.tex}
 
-% create a command for UFC
+% creating a command for UFC
 \newcommand{\ufc}{\normalsize{Universidade Federal do Ceará}}
 
-% Tile
+% Title
 \title[short title]{\textbf{Título da Apresentação}}
 % Subtitle
 \subtitle{Subtítulo da Apresentação}
@@ -112,18 +112,20 @@
     \begin{algorithm}[H]
         \SetAlgoLined
         \LinesNumbered
-        \KwResult{Write here the result }
-         initialization\;
-         \While{While condition}{
-          instructions\;
-          \eIf{condition}{
-           instructions1\;
-           instructions2\;
+        \SetKwInOut{Input}{input}
+        \SetKwInOut{Output}{output}
+        \Input{x: float, y: float}
+        \Output{r: float}
+        \While{True}{
+          r = x + y\;
+          \eIf{r >= 30}{
+           ``O valor de $r$ é maior ou iqual a 10.''\;
+           break\;
            }{
-           instructions3\;
+           ``O valor de $r$ = '', r\;
           }
          } 
-         \caption{How to write algorithms}
+         \caption{Algorithm Example}
     \end{algorithm}
 \end{frame}
 

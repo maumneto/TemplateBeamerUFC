@@ -2,14 +2,14 @@
 %% UFC Beamer Class File
 %% author: Maurício Moreira Neto
 %% description: This file creates a custom beamer class for the Federal University of Ceará (UFC).
-%% The same color hue as the university emblem is used.
+%% It was used the same color hue as the university emblem.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{libs/ufc_format}[15/12/20120, v1.0]
+\ProvidesClass{libs/ufc_format}[15/12/2020 v1.0 ufc template beamer]
 
 \PassOptionsToPackage{svgnames}{xcolor} 
-\LoadClass[compress, 11pt]{beamer}
+\LoadClass[compress, 10pt]{beamer}
 
 %% Putting the background image in the frames
 \usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/logoUFCbackground.png}}
@@ -28,7 +28,9 @@
 \RequirePackage{colortbl}
 \RequirePackage{graphicx}
 \RequirePackage[footnotesize,hang]{caption}
-\RequirePackage{algorithm2e}
+% Option management
+\RequirePackage{beamerbaseoptions}
+
 
 % colors
 \definecolor{blue_theme}{RGB}{0, 83, 134}
