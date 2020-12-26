@@ -104,3 +104,30 @@ The following example shows how to insert a code that is in the project files:
     \lstinputlisting[language=Python]{path_of_python_code.py}
 \end{frame}
 ```
+
+The following example shows how to insert a figure:
+
+```tex
+\begin{figure}
+    \centering
+    \caption{Caption of the Figure}
+    \includegraphics[scale=1]{path_of_the_figure}
+    \source{Source of the Figure}
+    \label{fig:figlabel}
+\end{figure}
+```
+
+The following example shows how to insert a multi-columns:
+
+```tex
+\begin{columns}{}
+    \begin{column}{0.5\textwidth}
+        \justify
+        Text of the left side!
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \justify
+        Text of the right side!
+    \end{column}
+\end{columns}    
+```

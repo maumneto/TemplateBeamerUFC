@@ -165,3 +165,8 @@
 }
 \end{flushleft}
 }
+
+% create the source of the image
+\newcommand{\source}[1]{
+    \caption*{\textcolor{blue_theme}{Fonte:} {#1}} 
+}

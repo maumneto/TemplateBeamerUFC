@@ -9,6 +9,9 @@
 
 % Inserting the preamble file with the packages
 \input{libs/preamble.tex}
+% Inserting the references file
+\bibliography{references.bib}
+
 
 % creating a command for UFC
 \newcommand{\ufc}{\normalsize{Universidade Federal do Ceará}}
@@ -150,8 +153,9 @@
 \end{frame}
 
 %% ---------------------------------------------------------------------------
-\subsection{Subseção IV}
-\begin{frame}
+% This frame show an example to insert multicolumns
+\section{Multicolunas}
+\begin{frame}{Seção II - Multicolunas}
     \begin{columns}{}
         \begin{column}{0.5\textwidth}
             \justify
@@ -162,6 +166,27 @@
             Porém, o espaçamento deve ser proporcional entre as colunas para que estas colunas não entrem em coflito. O espaçamento é dado pelo segundo argumento do $\backslash$begin.
         \end{column}
     \end{columns}    
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% This frame show an example to insert figures
+\section{Images}
+\begin{frame}{Seção III - Figures}
+    \begin{figure}
+        \centering
+        \caption{Emblema da UFC.}
+        \includegraphics[scale=0.3]{libs/brasao1_horizontal_cor.pdf}
+        \source{Obtido pelo site oficial da UFC \cite{siteufc} \cite{einstein}}
+        \label{fig:ufc_emblem}
+    \end{figure}
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% Reference frames
+\section{Referências}
+\begin{frame}[allowframebreaks]
+    \frametitle{Referências}
+    \printbibliography
 \end{frame}
 
 \end{document}
