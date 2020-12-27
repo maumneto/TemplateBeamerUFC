@@ -13,7 +13,7 @@
 
 %% Putting the background image in the frames
 \usebackgroundtemplate{\includegraphics[width=1.7\paperwidth]{libs/logoUFCbackground.png}}
-\logo{\includegraphics[scale=0.1]{libs/brasao1_horizontal_cor.pdf}\hspace{9.7cm} \vspace{-0.2cm}}
+\logo{\includegraphics[scale=0.1]{libs/emblemufc.pdf}\hspace{9.7cm} \vspace{-0.2cm}}
 
 %% Packages Used
 \RequirePackage[utf8]{inputenc}
