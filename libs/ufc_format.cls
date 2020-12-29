@@ -170,3 +170,16 @@
 \newcommand{\source}[1]{
     \caption*{\textcolor{blue_theme}{Fonte:} {#1}} 
 }
+
+% create a command for UFC
+\newcommand{\ufc}{
+  \bfseries
+  \normalsize{Universidade Federal do Ceará}
+}
+
+% department command
+\newcommand{\department}[1]{
+    \vspace*{0.2cm}
+    \bfseries
+    \normalsize{#1}
+}
