@@ -131,3 +131,11 @@ The following example shows how to insert a multi-columns:
     \end{column}
 \end{columns}    
 ```
+
+## Author
+<center><b>Maurício Moreira Neto</b></center>
+<p align="left">
+    <a href="https://github.com/maumneto">GitHub</a> • 
+    <a href="https://maumneto.github.io/mauriciomoreira/">Personal Site</a> • 
+    <a href="https://linktr.ee/maumneto">LinkTree</a>
+</p>
