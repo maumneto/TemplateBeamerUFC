@@ -183,3 +183,10 @@
     \bfseries
     \normalsize{#1}
 }
+
+% 
+\newcommand{\email}[1]{
+    \texttt{
+      \href{mailto:#1}{#1}
+    }
+}

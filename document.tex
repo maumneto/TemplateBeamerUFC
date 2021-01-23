@@ -6,7 +6,6 @@
 %%    linktree: https://linktr.ee/maumneto                                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{libs/ufc_format}
-
 % Inserting the preamble file with the packages
 \input{libs/preamble.tex}
 % Inserting the references file
@@ -20,9 +19,13 @@
 \author{Nome do Autor}
 % Institute's Name
 \institute[UFC]{
+    % email for contact
+    \normalsize{\email{usuario@dominio}}
+    \newline
     % Department Name
     \department{Nome do Departamento}
     \newline
+    % university name
     \ufc
 }
 % date of the presentation
@@ -45,7 +48,9 @@
 %% ---------------------------------------------------------------------------
 % Second frame
 \begin{frame}{Sumário}
-    \tableofcontents
+    \begin{multicols}{2}
+        \tableofcontents
+    \end{multicols}
 \end{frame}
 
 %% ---------------------------------------------------------------------------
@@ -169,7 +174,7 @@
 
 %% ---------------------------------------------------------------------------
 % This frame show an example to insert figures
-\section{Images}
+\section{Imagens}
 \begin{frame}{Seção III - Figures}
     \begin{figure}
         \centering
@@ -182,10 +187,23 @@
 
 %% ---------------------------------------------------------------------------
 % Reference frames
-\section{Referências}
 \begin{frame}[allowframebreaks]
     \frametitle{Referências}
     \printbibliography
+\end{frame}
+
+%% ---------------------------------------------------------------------------
+% Final frame
+\begin{frame}{}
+    \centering
+    \huge{\textbf{\example{Obrigado(a) pela Atenção!}}}
+    
+    \vspace{1cm}
+    
+    \Large{\textbf{Contato:}}
+    \newline
+    \vspace*{0.5cm}
+    \large{\email{usuario@dominio}}
 \end{frame}
 
 \end{document}

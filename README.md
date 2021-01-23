@@ -1,16 +1,50 @@
-# What is it?
+<!-- UFC figure pixel -->
+<div align="center">
+    <img class="aligncenter" src="libs/ufcpixel.png" width="220px" height="220px"/>
+</div>
 
-This project aims to create a template for presentation for the Federal University of Ceará (UFC). It was created a class called **ufc_format.cls** with a set of environments and commands related to the document.
+<br/>
+
+<!-- Title -->
+<div align="center">
+    <h1><b>Template Beamer UFC</b></h1>
+</div>
+
+<!-- Badges -->
+[![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/maumneto/TemplateBeamerUFC)[![GitHub issues](https://img.shields.io/github/issues/maumneto/TemplateBeamerUFC)](https://github.com/maumneto/TemplateBeamerUFC/issues)[![GitHub stars](https://img.shields.io/github/stars/maumneto/TemplateBeamerUFC)](https://github.com/maumneto/TemplateBeamerUFC/stargazers)[![GitHub forks](https://img.shields.io/github/forks/maumneto/TemplateBeamerUFC)](https://github.com/maumneto/TemplateBeamerUFC/network)[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/maumneto/TemplateBeamerUFC)[![Overleaf badge](https://img.shields.io/badge/Is_in_Oveleaf_Repository%3F-Yes!-<COLOR>.svg)](https://shields.io/)
+
+
+<!-- Table of Contents -->
+<p align="center">
+    <a href="#what is it?">What is it?</a> •
+    <a href="#for whom?">For Whom?</a> •
+    <a href="#tips">Tips</a> •
+    <a href="#changelog">Changelog</a> •
+    <a href="#author">Author</a>
+</p>
+
+<!-- Sections -->
+## What is it?
+
+This project aims to create a template for presentation for the Federal University of Ceará (UFC). It was created a class called **ufc_format.cls** with a set of environments and commands related to the document. This template is not an official document from the Federal University of Ceará. However, this template can be used to create classes, presentations, short courses, etc.
 
 ## For Whom?
+
 This template can be useful for the Federal University of Ceará (UFC) professors and students.
 
-## Tips of this Template
+- <b>Professors:</b> for creating classes and presentations
+  
+- <b>Students:</b> for assignments and presentations
+
+## Tips
+
 Some tips for using this template
 
 ### Blocks
 
 - Default Block
+  
 ```tex
     \begin{block}{Default Block}
         Body of default block.
@@ -18,6 +52,7 @@ Some tips for using this template
 ```
 
 - Alert Block
+  
 ```tex
     \begin{alertblock}{Alert Block}
         Body of alert block.
@@ -25,6 +60,7 @@ Some tips for using this template
 ```
 
 - Example Block
+  
 ```tex
     \begin{exampleblock}{Example Block}
         Body of example block.
@@ -64,13 +100,17 @@ Some tips for using this template
 ```
 
 ### Codes
+
 It is possible to insert codes in this presentation. This template uses two packages for algorithms: `algorithm2e` and `listings`. 
 
 - **Documentation** 
+  
   - algorithm2e: [Algorithm2e Package Documentation](http://linorg.usp.br/CTAN/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf)
+  
   - listings: [Listings Package Documentation](http://linorg.usp.br/CTAN/macros/latex/contrib/listings/listings.pdf)
 
 The following example shows how to create a pseudocode:
+
 ```tex
 \begin{algorithm}[H]
     \SetAlgoLined #includes indentation
@@ -132,10 +172,31 @@ The following example shows how to insert a multi-columns:
 \end{columns}    
 ```
 
+### Custom Commands
+
+This template has some custom commands that are described below:
+
+To print 'Universidade Federal do Ceará'
+```tex
+\ufc
+```
+
+To put the department name
+```tex
+\department{Department Name}
+```
+
+To put the email
+```tex
+\email{user@domain}
+```
+
+## Changelog
+
+[Changelog File](./CHANGELOG.md)
+
 ## Author
-<center><b>Maurício Moreira Neto</b></center>
-<p align="left">
-    <a href="https://github.com/maumneto">GitHub</a> • 
-    <a href="https://maumneto.github.io/mauriciomoreira/">Personal Site</a> • 
-    <a href="https://linktr.ee/maumneto">LinkTree</a>
-</p>
+
+Developed by <b>Maurício Moreira Neto</b> :metal: 
+
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:maumneto@gmail.com)[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/maumneto)[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maumneto/)[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@maumneto)[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/maumneto)
