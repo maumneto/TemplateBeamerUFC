@@ -39,4 +39,5 @@
 
 ## [1.3.1] - 2024-02-26
 ### Added
-- Add a CITATION.cff file [suggested by Joao Pedro Holanda - https://github.com/Joao-Pedro-P-Holanda]
+- Added a CITATION.cff file [suggested by Joao Pedro Holanda - https://github.com/Joao-Pedro-P-Holanda]
+- Added the `.github/release.yml` file
