@@ -2,8 +2,8 @@ name: compile and release
 
 on:
   push:
-    tags:
-     - '*.*.*'
+    branches:
+      - main
 
 jobs: 
   build_latex:
