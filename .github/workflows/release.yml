@@ -8,8 +8,6 @@ on:
 jobs: 
   build_latex:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
