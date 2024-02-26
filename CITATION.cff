@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: TemplateBeamerUFC
+message: Use as below to reference this template
+type: software
+authors:
+  - given-names: "Maurício"
+    family-names: "Moreira Neto"
+    orcid: "https://orcid.org/0000-0002-4600-5873"
+    lattes: "http://lattes.cnpq.br/7534400645876830"
+identifiers:
+  - type: url
+    value: 'https://github.com/maumneto/TemplateBeamerUFC'
+version: '1.3.1'
+date-released: '2024-02-26'

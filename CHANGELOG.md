@@ -36,3 +36,7 @@
 ### Fixed
 - Adjustment the 'Sumario' slide for two columns
 - Fixed the reference's slide bug
+
+## [1.3.1] - 2024-02-26
+### Added
+- Add a CITATION.cff file [suggested by Joao Pedro Holanda - https://github.com/Joao-Pedro-P-Holanda]
