@@ -7,9 +7,9 @@ on:
 
 jobs: 
   build_latex:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: https://github.com/maumneto/TemplateBeamerUFC
+      - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
