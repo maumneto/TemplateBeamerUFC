@@ -23,8 +23,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TEMPLATE_BEAMER_RELEASE }}
         with:
-          tag_name: v1.3.3
-          release_name: Release v.1.3.2
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
 
@@ -43,5 +43,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} 
           asset_path: templatebeamerufc.zip
-          asset_name: templatebeamerufc
+          asset_name: templatebeamerufc.zip
           asset_content_type: application/zip
