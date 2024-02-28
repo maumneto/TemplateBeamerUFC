@@ -16,15 +16,21 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: document.tex
+    
+      - name: Verifying version
+        run: | 
+          echo "Tag name: ${{ github.ref }}"
 
       - name: Create Release
         id: create_release
+        
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TEMPLATE_BEAMER_RELEASE }}
+          
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.event.ref }}
+          release_name: Release ${{ github.event.ref }}
           draft: false
           prerelease: false
 
