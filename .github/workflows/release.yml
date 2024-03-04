@@ -1,4 +1,4 @@
-name: compile and release
+name: compile and release version
 
 on:
   push:
@@ -23,11 +23,9 @@ jobs:
 
       - name: Create Release
         id: create_release
-        
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.TEMPLATE_BEAMER_RELEASE }}
-          
         with:
           tag_name: ${{ github.event.ref }}
           release_name: Release ${{ github.event.ref }}
@@ -39,6 +37,7 @@ jobs:
 
       - name: Compacting files
         run: |
+          echo "Compacting files in a ZIP file"
           zip -r templatebeamerufc.zip * 
 
       - name: Upload Release Asset
